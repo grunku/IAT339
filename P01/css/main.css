@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #231426;
+}
+
+
+/* SHARED TEXT ELEMENTS */
+
+button {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F1E4F4;
+    text-decoration: none;
+}
+
+p {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1em;
+    color: #231426;
+}
+
+h1 {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #F1E4F4;
+}
+
+.project-subsection h1 {
+    color: #231426;
+}
+
+h2 {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    padding-bottom: 10px;
+    color: #F1E4F4;
+}
+
+.project-subsection h2 {
+    color: #231426;
+}
+
+h3 {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+
+/* SHARED INTERACTIVE ELEMENTS */
+
+button {
+    padding: 9px 25px;
+    background-color: #B415DC;
+    color: #F1E4F4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #CE71E6;
+}
+
+form {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+}
+
+input[type=submit], input[type=reset] {
+    padding: 9px 25px;
+    background-color: #B415DC;
+    color: #F1E4F4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+}
+
+input[type=submit]:hover, input[type=submit]:active, input[type=reset]:hover, input[type=reset]:hover {
+    background-color: #CE71E6;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+a {
+    color: #B415DC;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover, a:active {
+    color: #CE71E6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a img {
+    border: 2px solid #B415DC;
+}
+
+a img:hover, a img:active {
+    border: 2px solid #CE71E6;
+}
+
+
+/* NAVBAR */
+
+header, .pseudo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #F1E4F4;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 2em;
+}
+
+.nav-links li a {
+    color: #B415DC;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #CE71E6;
+}
+
+
+/* PROJECT PAGE ELEMENTS */
+
+.page-header {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.project-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.project-section {
+    padding: 0 20px;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.project-subsection {
+    background-color: #F1E4F4;
+    padding: 25px;
+}
+
+.project-subsection ul, .project-subsection ol {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1em;
+    color: #231426;
+    padding-left: 40px;
+}
+
+.project-subsection img {
+    width: 32%;
+    padding: 10px 10px;
+}
+
+#ex-font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#ex-color-purple {
+    color: #B415DC;
+}
+
+#ex-color-lightpurple {
+    color: #CE71E6;
+}
+
+
+/* PRODUCT LISTING ELEMENTS */
+
+.product-listing {
+    display: flex;
+    height: 150px;
+    padding-bottom: 20px;
+    background-color: #F1E4F4;
+}
+
+.product-listing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#product-image {
+    background-image: url("../img/voez_songlist.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#product-info {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.extender {
+    color: #F1E4F4;
+}
+
+
+/* CART ELEMENTS */
+
+.cart-options {
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+}
