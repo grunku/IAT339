@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.block {
+  margin: 5px;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #333;
+  max-width: 580px;
+  flex-grow: 1;
+}
+
+@media (min-width: 30em) {
+  }
+}
+
+/* all information retrieved from https://jonibologna.com/blog/flexbox-cheatsheet
+and https://www.w3schools.com/css/css3_flexbox.asp*/
