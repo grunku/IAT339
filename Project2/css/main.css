@@ -29,6 +29,7 @@ h2 {
   font-size: 2em;
   font-weight: 500;
   margin: 0;
+  padding-top: 50px;
 }
 
 h3 {
@@ -51,6 +52,7 @@ h6 {
 p {
   font-size: 1em;
   /* max-width: 900px; */
+  margin-bottom: 0;
 }
 
 ul {
@@ -65,13 +67,13 @@ ul li {
 
 a {
   text-decoration: none;
-  font-weight: 600;
   color: #CE71E6;
-  transition: color 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
-a:hover, a:active {
+a:hover, a:active, a:focus {
   color: #B415DC;
+  transform:scale(1.1);
 }
 
 .firstcharacter { /* Retrieved from https://css-tricks.com/snippets/css/drop-caps/ */
@@ -186,7 +188,10 @@ select {
 
 .topnav { /* Modified from https://www.w3schools.com/howto/howto_js_topnav.asp */
   background-color: #FAF7FB;
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 8px 12px -8px;
 }
 
 .topnav a {
@@ -195,11 +200,12 @@ select {
   padding: 20px 16px;
   text-transform: uppercase;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .topnav a.active {
   color: #B415DC;
+  font-weight: bold;
 }
 
 /* PAGE STRUCTURE CONTENT */
@@ -212,8 +218,17 @@ select {
 
 .section-div {
   margin-bottom: 50px;
-  padding: 50px;
+  padding: 0 50px 50px 50px;
   background-color: #FAF7FB;
+  transition: all 0.1s;
+}
+
+.section-div:hover, .section-div:focus {
+  transform: scale(1.1);
+}
+
+.section-div p {
+  color: #231426;
 }
 
 @media only screen and (max-width: 1100px) {
