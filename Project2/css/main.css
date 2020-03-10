@@ -59,10 +59,6 @@ p {
   line-height: 1.5em;
 }
 
-ul {
-
-}
-
 ul li {
   padding-bottom: 10px;
 }
@@ -78,6 +74,38 @@ a:hover, a:active, a:focus {
   transform:scale(1.1);
 }
 
+.cta {
+  background-color: #CE71E6;
+  color: #FAF7FB;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px black;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.1s;
+  margin-bottom: 50px;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.cta:hover, .cta:focus, .cta:active {
+  background-color: #B415DC;
+  color: #FAF7FB;
+}
+
+.cta h3 {
+  padding: 0;
+}
+
+.cart-button {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  margin: 0;
+}
+
 .firstcharacter { /* Retrieved from https://css-tricks.com/snippets/css/drop-caps/ */
   float: left;
   font-size: 4.2em;
@@ -85,26 +113,6 @@ a:hover, a:active, a:focus {
   padding-top: 4px;
   padding-right: 8px;
   padding-left: 3px;
-}
-
-/* Quote */
-
-blockquote {
-  position: relative;
-  padding-left: 1em;
-  border-left: 0.2em solid lighten(black, 40%);
-  &:before, &:after {
-    content: '\201C';
-    color: lighten($black, 40%);
-    }
-  &:after {
-    content: '\201D';
-  }
-}
-
-code {
-  background-color: #EEE;
-  padding: 0.5em 0.75em;
 }
 
 input {
@@ -119,66 +127,6 @@ input {
 
 input:hover, input:active, input:focus {
   border: 2px solid #B415DC;
-}
-
-span.price {
-  float: right;
-  color: grey;
-}
-
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-.button-small{
-  color: #fff;
-  text-transform: uppercase;
-  border: none;
-  line-height: 22px;
-  padding: 12px 13px 11px;
-  text-align: center;
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 18px;
-}
-
-.button-small:visited{
-      color: #fff;
-}
-.button-small{ /* Modified from http://cssdeck.com/labs/xtkkwfbn */
-    padding: 6px 12px 5px;
-    font-size: 0.8em;
-    color: #fff;
-    text-shadow: none;
-}
-.button-small:hover{
-    color: rgba(255,255,255, 0.75);
-    box-shadow: inset 0 10px 20px rgba(255,255,255, 0.10);
-}
-.button-small:active {
-    box-shadow: inset 0 2px 2px rgba(0,0,0, 0.3), inset 0 10px 20px rgba(0,0,0, 0.08);
-}
-.rounded {
-    border-radius: 3px;
-  }
-
-.rounded2 {
-  border-radius: 5px;
-}
-
-.orange {
-    background: #ff7d64;
-}
-
-.red {
-  background: #ff4164;
-}
-
-.yellow {
-  background: #febd53;
 }
 
 .topnav { /* Modified from https://www.w3schools.com/howto/howto_js_topnav.asp */
@@ -228,7 +176,7 @@ select {
   padding-top: 50px;
 }
 
-.section-div:hover, .section-div:focus {
+.grow:hover, .grow:focus, .grow:active {
   transform: scale(1.1);
 }
 
@@ -242,6 +190,36 @@ select {
     margin-right: 10%;
     width: 80%;
   }
+}
+
+/* PRODUCT LISTING */
+
+.listing {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #FAF7FB;
+}
+
+.listing h2 {
+  font-weight: 700;
+}
+
+.listing p {
+  font-weight: bold;
+  color: #FAF7FB;
+}
+
+#jubeat {
+  background-image: url("../img/jubeat_machines.jpg");
+}
+
+#project-diva {
+  background-image: url("../img/project_diva_gameplay.jpg");
+}
+
+#beatmania {
+  background-image: url("../img/beatmania_iidx_gameplay.jpg");
 }
 
 /* CART */
