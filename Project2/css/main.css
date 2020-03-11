@@ -1,7 +1,11 @@
-body, html {
-  background-color: #231426;
+body {
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
+}
+
+html {
+  min-height: 100%;
+  background-image: linear-gradient(#231426, #0f0118);
 }
 
 section:not([id]) {
@@ -154,9 +158,10 @@ input:hover, input:active, input:focus {
 /* PAGE STRUCTURE CONTENT */
 
 .page-content {
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  max-width: 700px;
   margin-top: 120px;
 }
 
@@ -165,6 +170,14 @@ input:hover, input:active, input:focus {
   padding: 0 50px 50px 50px;
   background-color: #FAF7FB;
   transition: all 0.1s;
+}
+
+.section-div-no-bg {
+  margin-bottom: 50px;
+  padding: 0 50px 50px 50px;
+  background-color: none;
+  color: #FAF7FB;
+  text-align: center;
 }
 
 .section-div img {
@@ -186,9 +199,9 @@ input:hover, input:active, input:focus {
 
 @media only screen and (max-width: 1100px) {
   .page-content {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
 }
 
