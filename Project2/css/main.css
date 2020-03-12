@@ -87,7 +87,7 @@ a:hover, a:active, a:focus {
   color: #FAF7FB;
   text-transform: uppercase;
   border-radius: 5px;
-  box-shadow: 0 3px 5px black;
+  box-shadow: 0px 8px 12px -8px black;
   padding: 10px 20px;
   border: none;
   transition: all 0.1s;
@@ -137,6 +137,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .topnav a {
@@ -267,15 +268,35 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 #jubeat {
-  background-image: url("../img/jubeat_machines.jpg");
+  background-image: url("../img/jubeat_gameplay_darkened.png");
 }
 
 #project-diva {
-  background-image: url("../img/project_diva_gameplay.jpg");
+  background-image: url("../img/project_diva_gameplay_darkened.png");
 }
 
 #beatmania {
-  background-image: url("../img/beatmania_iidx_gameplay.jpg");
+  background-image: url("../img/beatmania_iidx_gameplay_darkened.png");
+}
+
+#sound-voltex {
+  background-image: url("../img/sound_voltex_darkened.png");
+}
+
+#street-fighter {
+  background-image: url("../img/street_fighter_darkened.png");
+}
+
+#p4au {
+  background-image: url("../img/p4au_darkened.png");
+}
+
+#metal-slug {
+  background-image: url("../img/metal_slug_darkened.png");
+}
+
+#time-crisis {
+  background-image: url("../img/time_crisis_darkened.png");
 }
 
 /* CART */
